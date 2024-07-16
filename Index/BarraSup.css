@@ -1,0 +1,196 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-left, .header-right {
+    flex: 1;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.text-largee{
+    text-align: center;
+    font-size: 50px;
+}
+.topic {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.topic-text {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.topic-text .text-large {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.topic-text .text-small {
+    font-size: 1em;
+    color: #555;
+}
+
+.introduction {
+    padding: 50px 20px;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 368px;
+    height: 368px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+.text-large {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.text-small {
+    font-size: 1.5em;
+    color: #555;
+}
+
+.hobbies {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hobbies h2 {
+    margin-bottom: 20px;
+}
+
+.hobby {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hobby-box {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.hobby-box p {
+    margin: 0;
+}
+
+.education {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.education h2 {
+    margin-bottom: 20px;
+}
+@media (max-width: 900px) {
+
+
+    .profile-pic {
+        width: 146px;
+        height: 146px;
+        margin: 0 0 20px 0;
+    }
+}
+@media (max-width: 608px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header-right {
+        text-align: center;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-list-active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .intro-container {
+        flex-direction: column;
+    }
+
+    .profile-pic {
+        width: 136px;
+        height: 136px;
+        margin: 0 0 20px 0;
+    }
+
+    .hobby {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hobby-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

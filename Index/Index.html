@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="BarraSup.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <h1>Brayan Lopez</h1>
+            </div>
+            <nav class="header-right">
+                <ul class="nav-list">
+                    <li><a href="sobre-mi">Sobre mí</a></li>
+                    <li><a href="hobbies">Hobbies</a></li>
+                    <li><a href="email">br19n@gmail.com</a></li>
+                </ul>
+                <div class="menu-icon" id="menu-icon">
+                    ☰
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="sobre-mi" class="introduction">
+            <div class="intro-container">
+                
+                <div class="intro-text">
+                    <div class="text-large">
+                        <p>Soy Brayan Lopez Vazquez y estoy construyendo esta pagina</p>
+                    </div>
+                    <div class="text-small">
+                        <p>Estoy cursando la practica de frond end en el challenge. Estoy modificiando algunas cosas a mi gusto. Inspirado en el proyecto de figma</p>
+                    </div>
+                    
+                </div>
+                <img src="../imagenes/yo.jpg" alt="Mi foto" class="profile-pic">
+            </div>
+        </section>
+        <section id="tema" class="topic">
+            <div class="topic-text">
+                <div class="text-large">
+                    <p>Sobre mi</p>
+                </div>
+                <div class="text-small">
+                    <p>Me llamo Brayan Lopez Vazquez. Me esfuerzo acualmente en mis estudios
+                        para poder tener un buen trabajo en el futuro. Mi actitud es muy positiva 
+                        y con mucha energia. No tengo porblemas en trabajar en equipo y me gusta 
+                        tener retos a superar en poco tiempo. En mis tiempolibres generalmente juego
+                        o practico algun deporte
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="text-largee">
+            <p>Hobbies</p>
+        </div>
+        <div class="hobbies-container">
+            <div class="hobby">
+                <img src="../imagenes/camara.png" alt="Icono 1" class="icon">
+                <p class="hobby-text">Fotografia 1</p>
+            </div>
+            <div class="hobby">
+                <img src="../imagenes/caminante.png" alt="Icono 2" class="icon">
+                <p class="hobby-text">Caminar 2</p>
+            </div>
+            <div class="hobby">
+                <img src="../imagenes/juego.png" alt="Icono 3" class="icon">
+                <p class="hobby-text">Videojuegos 3</p>
+            </div>
+            <div class="hobby">
+                <img src="../imagenes/pesa.png" alt="Icono 4" class="icon">
+                <p class="hobby-text">Gym 4</p>
+            </div>
+        </div>
+
+        <main class="containerr">
+            <div class="image-container">
+                <img src="../imagenes/telefono.jpg" alt="Imagen">
+            </div>
+            <div class="form-containerr">
+                <form id="contact-form" class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Enviar Mensaje</button>
+                    </div>
+                </form>
+            </div>
+    </main>
+    <script src="./script.js"></script>
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            var navList = document.querySelector('.nav-list');
+            navList.classList.toggle('nav-list-active');
+        });
+    </script>
+</body>
+</html>
